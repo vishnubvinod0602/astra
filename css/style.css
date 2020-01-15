@@ -3,7 +3,11 @@ body
     margin:0;
     padding:0;
     font-family: sans-serif;
-    background:url("img/l1.gif");
+    background-image: url('img\back.gif');
+    background-size: cover;
+     height: 100vh;
+    padding:0;
+    margin:0;
 
 }
 
