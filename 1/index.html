@@ -1,27 +1,39 @@
 <!DOCTYPE html>
 <html>
-    <meta name="viewport" content="width=device-width, initial-sccale=1.0">
-    <head>
+
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
         <title>EVENTS</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="po.css">
+        <link href="https://fonts.googleapis.com/css?family=Anton|Oswald:300,700|Patua+One&display=swap" rel="stylesheet">
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
-        <link rel="stylesheet" href="css/flipster.min.css">
-        <link rel="stylesheet" href="css/demo.css">
-    <link rel="stylesheet" href="css/jquery.flipster.css">
+       <link rel="stylesheet" type="text/css" href="css/flipster.min.css"> 
+       <!-- <link rel="stylesheet" href="css/demo.css"> -->
+   <link rel="stylesheet" href="css/jquery.flipster.css"> 
     <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.flipster.min.js"></script>
+    <script src="js/jquery.flipster.min.js"></script> 
     </head>
     <body>
+
        
       <header>
-            <div class="logo">ASTRA 20</div>
-            <nav >
-                <ul>
-                    <li><a href="#" >Home</a></li>
-                    <li><a href="#" class="active">Events</a></li>
-                    <li><a href="#">Collabs</a></li>
-                </ul>
-            </nav>
+        <div class="logo">
+          <h6>ASTRA'20</h6>
+        </div>
+        <nav>
+          
+<div id="menu" class="burger" onclick="onClickMenu()">
+             <div class="l l1"></div>
+             <div class="l l2"></div>
+             <div class="l l3"></div>
+         </div>
+         <ul class="navList">
+             <li><a href="#">Home</a></li>
+             <li><a href="#">Events</a></li>
+             <li><a href="#">Contact</a></li>
+         </ul>
+     </nav>
             <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i>
 
             </div>
@@ -29,29 +41,34 @@
                 <div class="flipster" style="top:120px">
             <ul class="flip-items">
               <li>
-                <a href="#1"><img src="http://brokensquare.com/Code/jquery-flipster/demo/img/text1.gif">
-                </a>
-                
+               <div class="item"> <a href="#popup1">
+                 <img src="img/vr.jpg" height="500px" width="500px" ><p>VIRTUAL REALITY </p>
+              </a>
+                </div>
               </li>
               <li>
-                <a href="#2">
-                  <img src="http://brokensquare.com/Code/jquery-flipster/demo/img/text2.gif">
+                <div class="item"><a href="#popup2">
+                  <img src="img/robotics.jpg" height="500px" width="500px"><p>ARDUBOTICS</p>
                 </a>
+              </div>
               </li>
               <li>
-                <a href="#3">
-                  <img src="http://brokensquare.com/Code/jquery-flipster/demo/img/text3.gif">
+                <div class="item"><a href="#popup3">
+                  <img src="img/industrial-automation.jpg" height="500px" width="500px"><p>INDUSTRIAL AUTOMATION</p>
                 </a>
+              </div>
               </li>
               <li>
-                <a href="#4">
-                  <img src="http://brokensquare.com/Code/jquery-flipster/demo/img/text4.gif">
+                <div class="item"><a href="#popup4">
+                  <img src="img/e-vehicle.jpg"height="500px" width="500px"> <p>E-VEHICLES</p>
                 </a>
+              </div>
               </li>
               <li>
-                <a href="#5">
-                  <img src="http://brokensquare.com/Code/jquery-flipster/demo/img/text5.gif">
+                <div class="item"><a href="#popup5">
+                  <img src="img/franck-v-U3sOwViXhkY-unsplash.jpg"height="500px" width="500px"><p>PROCESS DESIGN ENGINEERING</p>
                 </a>
+              </div> 
               </li>
             </ul>
           </div>
@@ -65,10 +82,14 @@
                  })
             })
         </script>
+
+        <!--
 <div class="shooting">
  <img id="player-controlled-shooter" src="img/war.png">
 </div>
-  </div>
+  </div> -->
+  
 </body>
-<script type="text/javascript" src="/js/shooting.js"></script>
+<!--
+<script type="text/javascript" src="/js/shooting.js"></script> -->
 </html>

@@ -1,5 +1,25 @@
 console.clear();
+function addClass(){
+  var v = document.getElementById("but");
+  v.className += "animated zoomOutUp";
+  /*window.open("test.html")*/
 
+}
+
+const burger = document.querySelector(".burger");
+const navList =document.querySelector(".navList");
+const links = document.querySelectorAll(".navList li");
+
+burger.addEventListener('click', () => {
+  navList.classList.toggle('open');
+  links.forEach(link =>{
+      link.classList.toggle('fade');
+  });
+});
+
+function onClickMenu(){
+  document.getElementById("menu").classList.toggle("change");
+}
 
 var flipContainer = $('.flipster'),
     flipItemContainer = flipContainer.find('.flip-items'),
@@ -9,9 +29,9 @@ var f = flipContainer.flipster({
   itemContainer: flipItemContainer,
   itemSelector: flipItem,
   loop: true,
-  style: 'flat',
-  spacing: 0,
-  scrollwheel: false,
+  style: 'carousel',
+  spacing:0.5,
+  scrollwheel: true,
   buttons: true,
 });
 

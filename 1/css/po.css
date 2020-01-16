@@ -1,0 +1,113 @@
+@media only screen and (max-width: 1200px){
+
+}
+
+@media only screen and (max-width: 1025px){
+ #cont{
+
+    margin-top: 5%;
+    margin-left: 0px;
+}
+     h6 {
+        margin-top: 4%;
+        margin-left: 3%;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .l {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+    nav {
+        position: relative;
+    }
+    .burger {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%,-50%);
+    }
+    .navList {
+        z-index: 10;
+        position: fixed;
+        background: rgba(0, 0, 0, 0.76);
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(100px at 90% -20%);
+        -webkit-clip-path: circle(100px at 90% -20%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+    
+    .navList.open{
+        clip-path: circle(1000px at 90% -20%);
+        -webkit-clip-path: circle(1000px at 90% -20%);
+        pointer-events: all;
+    }
+    
+    .navList li {
+        opacity: 0;
+    }
+    .navList li a{
+        font-size: 25px;
+    }
+    .navList li:nth-child(1){
+        transition: all 0.5s ease 0.2s;
+    }
+    .navList li:nth-child(2){
+        transition: all 0.5s ease 0.4s;
+    }
+    .navList li:nth-child(3){
+        transition: all 0.5s ease 0.6s;
+    }
+    li.fade{
+        opacity: 1;
+    }
+    
+    
+    .change .l {
+        margin: -5px;
+        width:35px;
+        transition: 0.3s ease;
+    }
+    .change .l1{
+        transform:translateX(-8px) translateY(5px) rotateZ(-45deg);
+    }
+     .change .l2{
+        opacity: 0;
+    }
+     .change .l3{
+        transform:translateX(-8px) translateY(5px) rotateZ(45deg);
+    }
+    
+    h6 {
+        margin-top: 4%;
+        margin-left: 3%;
+    }
+    
+    
+    /************************/
+    .floating{
+    margin-left: 30%;
+    margin-top: auto;
+}
+
+}
+
+@media only screen and (max-width: 480px){
+   .floating{
+    margin-left: 15%;
+    margin-top: auto;
+    } 
+    .centerlogoimg{
+        height: 200px;
+    }
+    .centername{
+        font-size: 60px;
+    }
+}
