@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
 
-  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0">
   <head>
         <title>WORKSHOPS | ASTRA 20 </title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" type="text/css" href="po.css">
         <link href="https://fonts.googleapis.com/css?family=Anton|Oswald:300,700|Patua+One&display=swap" rel="stylesheet">
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
-        <!--<link rel="stylesheet" type="text/css" href="css/flipster.min.css"> -->
        <link rel="stylesheet" href="css/demo.css"> 
        <link rel="icon" href="img/logo1.png" type="image/gif" sizes="16x16">
-  <link rel="stylesheet" href="css/jquery.flipster.css"> 
-    <script src="js/jquery.min.js"></script>
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </head>
     <body>
       <header>
@@ -21,7 +22,7 @@
 <div id="menu" class="burger" onclick="onClickMenu()">
              <div class="l l1"></div>
              <div class="l l2"></div>
-             <div class="l l3"></div>
+             <div class="l l3"></div>0
          </div>
          <ul class="navList">
              <li><a href="#">Home</a></li>
@@ -33,51 +34,70 @@
 
             </div>
         </header> 
-                <div class="flipster" style="top:120px">
-            <ul class="flip-items">
-              <li>
-               <div class="item"> <a href="#popup1">
-                 <img src="img/vr.jpg" height="500px" width="500px" ><p>  VIRTUAL REALITY </p>
-              </a>
+        <div class="bd-example">
+          <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="#1">
+                <img src="/img/vr.jpg" height="300px" width="300px" class="d-block w-100" alt="VIRTUAL REALITY">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>VIRTUAL REALITY</h5>
+                  </a>
                 </div>
-              </li>
-              <li>
-                <div class="item"><a href="#popup2">
-                  <img src="img/robotics.jpg" height="500px" width="500px"><p>  ARDUBOTICS</p>
-                </a>
               </div>
-              </li>
-              <li>
-                <div class="item"><a href="#popup3">
-                  <img src="img/industrial-automation.jpg" height="500px" width="500px"><p> INDUSTRIAL AUTOMATION</p>
-                </a> 
+              <div class="carousel-item">
+                <a href="#2">
+                <img src="/img/robotics.jpg"  height="300px" width="300px" class="d-block w-100" alt="ARDUBOTICS">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>ARDUBOTICS</h5>
+                  </a>
+                </div>
               </div>
-              </li>
-              <li>
-                <div class="item"><a href="#popup4">
-                  <img src="img/e-vehicle.jpg"height="500px" width="500px"> <p> E-VEHICLES</p>
-                </a>
+              <div class="carousel-item">
+                <a>
+                <img src="/img/industrial-automation.jpg"  height="300px" width="300px" class="d-block w-100" alt="INDUSTRIAL AUTOMATION">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>INDUSTRIAL AUTOMATION</h5>
+                  </a>
+                </div>
               </div>
-              </li>
-              <li>
-                <div class="item"><a href="#popup5">
-                  <img src="img/franck-v-U3sOwViXhkY-unsplash.jpg"height="500px" width="500px"><p> PROCESS DESIGN ENGINEERING</p>
-                </a>
-              </div> 
-              </li>
-            </ul>
+              <div class="carousel-item">
+                <a href="#3">
+                <img src="/img/e-vehicle.jpg"  height="300px" width="300px" class="d-block w-100" alt="E-VEHICLES">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>E VEHICLES</h5>
+                  </a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <a href="#4">
+                <img src="/img/franck-v-U3sOwViXhkY-unsplash.jpg"  height="300px" width="300px" class="d-block w-100" alt="industrial-automation">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>PROCESS DESIGN ENGINEERING</h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
-        <script src="js/main.js"></script>
-        <script src="https://code.jquery.com/jquery-3.4.1.js">
-        </script>
-        <script type="text/javascript">
-            $(document).ready(function(){
-                 $('.menu-toggle').click(function(){
-                     $('nav').toggleClass('active')
-                 })
-            })
-        </script>
-
+        </div>     
+ 
+               
+      
         <!--
 <div class="shooting">
  <img id="player-controlled-shooter" src="img/war.png">
