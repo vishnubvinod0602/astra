@@ -3,7 +3,7 @@
 .flipster {
   display: block;
   overflow-x: hidden;
-  overflow-y: visible;
+  overflow-y: hidden;
   position: relative;
 }
 .flipster:focus {
@@ -38,7 +38,9 @@
 }
 .flipster__item img {
   max-width: 100%;
-  width: fit-content;
+  width: unset;
+  overflow: hidden;
+  overflow-y: hidden;
   
 }
 .flipster__item p
